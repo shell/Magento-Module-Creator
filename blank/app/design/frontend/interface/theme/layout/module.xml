@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <[module]_index_index>
+        <reference name="content">
+            <block type="[module]/[module]" name="[module]" template="[module]/[module].phtml" />
+        </reference>
+    </[module]_index_index>
+</layout> 

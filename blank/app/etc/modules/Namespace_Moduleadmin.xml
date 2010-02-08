@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <[Namespace]_[Moduleadmin]>
+            <active>true</active>
+            <codePool>local</codePool>
+        </[Namespace]_[Moduleadmin]>
+    </modules>
+</config> 

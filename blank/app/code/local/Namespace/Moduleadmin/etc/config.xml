@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <[Namespace]_[Moduleadmin]>
+            <version>0.1.0</version>
+        </[Namespace]_[Moduleadmin]>
+    </modules>
+    <admin>
+        <routers>
+			<[moduleadmin]>
+				<use>admin</use>
+				<args>
+					<module>[Namespace]_[Moduleadmin]</module>
+					<frontName>[moduleadmin]</frontName>
+				</args>
+			</[moduleadmin]>
+        </routers>
+    </admin>
+    <adminhtml>
+		<menu>
+			<[moduleadmin] module="[moduleadmin]">
+				<title>[Module]</title>
+				<sort_order>71</sort_order>               
+				<children>
+					<items module="[moduleadmin]">
+						<title>Manage Items</title>
+						<sort_order>0</sort_order>
+						<action>[moduleadmin]/[module]</action>
+					</items>
+				</children>
+			</[moduleadmin]>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<[Namespace]_[Moduleadmin]>
+							<title>[Module] Module</title>
+							<sort_order>10</sort_order>
+						</[Namespace]_[Moduleadmin]>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<[moduleadmin]>
+					<file>[moduleadmin].xml</file>
+				</[moduleadmin]>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+		<blocks>
+			<[moduleadmin]>
+				<class>[Namespace]_[Moduleadmin]_Block</class>
+			</[moduleadmin]>
+		</blocks>
+		<helpers>
+			<[moduleadmin]>
+				<class>[Namespace]_[Moduleadmin]_Helper</class>
+			</[moduleadmin]>
+		</helpers>
+    </global>
+</config>
