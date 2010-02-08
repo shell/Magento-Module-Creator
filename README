@@ -1,0 +1,11 @@
+== Module creator
+
+	Fixes by Vladimir Penkin(penkinv@gmail.com)
+	
+	This fix include separaiton of module in two parts: Frontend and Admin.
+	This needed if you want different properties for each module. 
+	In my case there was need to protect only admin module with SSL. 
+	
+== Installation
+
+	http://module_creator
